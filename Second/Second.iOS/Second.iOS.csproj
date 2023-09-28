@@ -6,10 +6,12 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <CodesignKey>iPhone Developer</CodesignKey>
+     
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <MtouchExtraArgs></MtouchExtraArgs>
+        <RuntimeIdentifiers>ios-arm64</RuntimeIdentifiers>
+        <PlatformTarget>ARM64</PlatformTarget>
+        
     </PropertyGroup>
 
     <ItemGroup>

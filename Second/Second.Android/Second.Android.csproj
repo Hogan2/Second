@@ -4,11 +4,18 @@
         <TargetFramework>net7.0-android</TargetFramework>
         <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
         <Nullable>enable</Nullable>
-        <ApplicationId>com.CompanyName.Second</ApplicationId>
+        <ApplicationId>com.edward.Second</ApplicationId>
         <ApplicationVersion>1</ApplicationVersion>
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
         <AndroidPackageFormat>apk</AndroidPackageFormat>
-        <AndroidEnableProfiledAot>False</AndroidEnableProfiledAot>
+        <AndroidEnableProfiledAot>False</AndroidEnableProfiledAot>        
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <RuntimeIdentifiers>android-arm64</RuntimeIdentifiers>
+        <PlatformTarget>ARM64</PlatformTarget>
+        <PublishTrimmed>True</PublishTrimmed>
+        <RunAOTCompilation>True</RunAOTCompilation>
+        <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
     </PropertyGroup>
 
     <ItemGroup>
