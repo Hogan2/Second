@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <LangVersion>11</LangVersion>
+    <Configurations>Release;Debug</Configurations>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Description>Mapsui - Library for mapping</Description>
+	<IsPackable>true</IsPackable>
+	<TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\MyLocationDir.svg" />
+    <None Remove="Resources\Images\MyLocationMoving.svg" />
+    <None Remove="Resources\Images\MyLocationStill.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\MyLocationDir.svg" />
+    <EmbeddedResource Include="Resources\Images\MyLocationMoving.svg" />
+    <EmbeddedResource Include="Resources\Images\MyLocationStill.svg" />
+    <EmbeddedResource Include="Resources\Images\Pin.svg" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0"/>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+</Project>

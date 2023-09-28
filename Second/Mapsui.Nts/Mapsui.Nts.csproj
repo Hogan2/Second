@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>Mapsui - Library for mapping</Description>
+		<PackageTags>$(PackageTags) nts</PackageTags>
+		<IsPackable>true</IsPackable>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NetTopologySuite" Version="2.5.0" />
+		<PackageReference Include="NetTopologySuite.IO.GeoJSON4STJ" Version="4.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'netstandard2.1'">
+		<PackageReference Include="System.Text.Encoding.CodePages" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Mapsui\Mapsui.csproj" />
+	</ItemGroup>
+
+</Project>

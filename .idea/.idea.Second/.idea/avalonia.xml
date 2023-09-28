@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Second/Second/App.axaml" value="Second/Second.Browser/Second.Browser.csproj" />
+        <entry key="Second/Second/Views/MainView.axaml" value="Second/Second.Desktop/Second.Desktop.csproj" />
+        <entry key="Second/Second/Views/MainWindow.axaml" value="Second/Second.Browser/Second.Browser.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
